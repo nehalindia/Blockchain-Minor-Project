@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const {} = require('../controller/cryptoController')
+const {cryptoData} = require('../controller/cryptoController')
 
-
+router.get('/crypto',cryptoData)
 
 module.exports = router
